@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install --only=development
+  pre_build:
+    commands:
+      - echo Running tests...
+      - npm test
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Starting the development server...
+      - npm start # Start the development server
+artifacts:
+  files:
+    - '**/*'
+  base-directory: build
+cache:
+  paths:
+    - node_modules/**/*
