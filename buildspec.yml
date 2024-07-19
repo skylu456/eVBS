@@ -9,11 +9,11 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling the React app...
-      - npm run build # Create a production build
+      - npm run build 
 artifacts:
   files:
     - '**/*'
-  base-directory: build # Ensure this points to the correct directory for your build artifacts
+  base-directory: build 
 cache:
   paths:
     - node_modules/**/*
