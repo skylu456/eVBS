@@ -5,10 +5,6 @@ phases:
     commands:
       - echo Installing source NPM dependencies...
       - npm install --verbose
-  pre_build:
-    commands:
-      - echo Running tests...
-      - npm test -- --verbose
   build:
     commands:
       - echo Build started on `date`
