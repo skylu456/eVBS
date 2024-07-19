@@ -15,7 +15,7 @@ import './App.css';
 const Dashboard = () => (
   <>
     <Typography variant="h3" gutterBottom>
-      Dashboard - Mis Widgets
+      Dashboard - Mis Widgets Personales
     </Typography>
     <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2 }}>
       <SpendingOverview />
