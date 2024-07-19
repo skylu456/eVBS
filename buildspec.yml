@@ -4,16 +4,20 @@ phases:
   install:
     commands:
       - echo Installing source NPM dependencies...
-      - npm install --verbose
+      - npm install
+  pre_build:
+    commands:
+      - echo Running tests...
+      - npm test
   build:
     commands:
       - echo Build started on `date`
       - echo Compiling the React app...
-      - npm start -- --verbose
+      - npm run build # Create a production build
 artifacts:
   files:
     - '**/*'
-  base-directory: build
+  base-directory: build # Ensure this points to the correct directory for your build artifacts
 cache:
   paths:
     - node_modules/**/*
