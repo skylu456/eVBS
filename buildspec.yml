@@ -4,16 +4,16 @@ phases:
   install:
     commands:
       - echo Installing source NPM dependencies...
-      - npm install --only=development
+      - npm install --verbose
   pre_build:
     commands:
       - echo Running tests...
-      - npm test
+      - npm test -- --verbose
   build:
     commands:
       - echo Build started on `date`
-      - echo Starting the development server...
-      - npm start # Start the development server
+      - echo Compiling the React app...
+      - npm start -- --verbose
 artifacts:
   files:
     - '**/*'
@@ -21,3 +21,4 @@ artifacts:
 cache:
   paths:
     - node_modules/**/*
+
