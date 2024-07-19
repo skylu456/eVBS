@@ -1,0 +1,22 @@
+/* Sidebar.css */
+
+.sidebar {
+    background-color: #2b2a28; 
+  }
+
+.sidebar .MuiDrawer-paper {
+    background-color: #2b2a28; 
+  }
+  
+.sidebar .MuiTypography-root {
+    color: rgb(255, 255, 255);
+  }
+  
+.sidebar .MuiListItemText-root {
+    color: rgb(255, 255, 255);
+  }
+  
+.sidebar .MuiListItemIcon-root {
+    color: rgb(255, 255, 255);
+  }
+  
